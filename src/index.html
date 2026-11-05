@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея картинок</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Галерея фотографій</title>
 </head>
 <body>
-    <header>
-        <h1>FOTO IMAGE LIST</h1>
-    </header>
-    <main>
-        <div id="gallery" class="gallery"></div>
-        <div class="buttons">
-            <button id="loadMore">Завантажити ще 4 картинки</button>
-            <button id="clearGallery">Очистити галерею</button>
-            <button id="removeLast">Видалити останню картинку</button>
-            <button id="reverseGallery">Перевернути галерею</button>
-            <button id="shuffleGallery">Перемішати галерею</button>
+    <div class="container">
+        <h1>Моя фотогалерея</h1>
+        
+        <div id="gallery" class="gallery">
+            <!-- Сюди будуть додаватися картинки через JS -->
         </div>
-    </main>
+
+        <div class="controls">
+            <button id="btn-load">Завантажити ще 4 картинки</button>
+            <button id="btn-clear">Очистити галерею</button>
+            <button id="btn-remove-last">Видалити останню</button>
+            <button id="btn-reverse">Перевернути галерею</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
